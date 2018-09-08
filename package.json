@@ -4,13 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development ./clientapp/frontend/src/index.js --output ./clientapp/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./clientapp/frontend/src/index.js --output ./clientapp/frontend/static/frontend/main.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Frederic Mauguiere",
+  "license": "Apache 2",
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "weak-key": "^1.0.1",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0"
-  }
+  },
+  "dependencies": {}
 }
